@@ -117,6 +117,10 @@ nav button.active, nav button:hover { color: var(--crema); background: var(--ros
   font-size: clamp(4.5rem, 18vw, 8rem);
   line-height: .88; color: var(--marrone);
 }
+.home-title .il {
+  font-family: 'DM Serif Display', serif;
+  font-style: italic;
+}
 .home-title em { font-style: italic; color: var(--rosso); }
 .home-sub {
   font-family: 'Playfair Display', serif;
