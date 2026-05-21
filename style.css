@@ -190,6 +190,7 @@ nav button.active, nav button:hover { color: var(--crema); background: var(--ros
   color: var(--crema);
 }
 #view-prenota .page-header h2 { color: var(--crema); }
+#view-prenota .page-header h2 em { color: var(--oro); }
 #view-prenota .page-header p  { color: #f5c978cc; }
 
 .form-grid {
