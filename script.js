@@ -32,6 +32,6 @@ function invia() {
   if (occ) msg += `🎉 *Occasione:* ${occ}\n`;
   if (note) msg += `📝 *Note:* ${note}\n`;
 
-  const url = `https:
+  const url = `https://wa.me/393426413969?text=${encodeURIComponent(msg)}`;
   window.open(url, '_blank');
 }
