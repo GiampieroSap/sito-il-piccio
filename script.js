@@ -3,7 +3,7 @@ function go(page) {
   document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
   document.getElementById('view-' + page).classList.add('active');
   document.getElementById('nav-' + page).classList.add('active');
-  // scroll to top of the new view
+  
   document.getElementById('view-' + page).scrollTop = 0;
 }
 
@@ -32,6 +32,6 @@ function invia() {
   if (occ) msg += `🎉 *Occasione:* ${occ}\n`;
   if (note) msg += `📝 *Note:* ${note}\n`;
 
-  const url = `https://wa.me/393426413969?text=${encodeURIComponent(msg)}`;
+  const url = `https:
   window.open(url, '_blank');
 }

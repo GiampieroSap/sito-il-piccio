@@ -9,14 +9,17 @@
   --fumo-s:  #1a0e04;
 }
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html, body { height: 100%; overflow: hidden; }
+html, body {
+  -webkit-user-select: none;
+  user-select: none; height: 100%; overflow: hidden; }
 body {
+  -webkit-user-select: none;
+  user-select: none;
   font-family: 'Libre Baskerville', Georgia, serif;
   background: var(--crema);
   color: var(--marrone);
 }
 
-/* ─── PIZZA PATTERN ─── */
 .pizza-bg::before {
   content: '';
   position: absolute; inset: 0; z-index: 0;
@@ -25,7 +28,6 @@ body {
   pointer-events: none;
 }
 
-/* ─── VIEWS SYSTEM ─── */
 .view {
   position: fixed; inset: 0;
   display: flex; flex-direction: column;
@@ -39,7 +41,6 @@ body {
   transform: none;
 }
 
-/* ─── NAV ─── */
 nav {
   position: fixed; bottom: 0; left: 0; right: 0;
   z-index: 200;
@@ -62,18 +63,14 @@ nav button {
 nav button .nav-icon { font-size: 1.35rem; line-height: 1; }
 nav button.active, nav button:hover { color: var(--crema); background: var(--rosso); }
 
-/* ─── SCROLLABLE INNER ─── */
 .view-inner {
   flex: 1;
-  padding: 2.5rem 1.5rem 5.5rem; /* bottom padding for nav */
+  padding: 2.5rem 1.5rem 5.5rem; 
   max-width: 780px;
   width: 100%;
   margin: 0 auto;
 }
 
-/* ──────────────────────────────
-   VIEW: HOME
-────────────────────────────── */
 #view-home {
   background: radial-gradient(ellipse 90% 60% at 50% 28%, #f9e0b0 0%, var(--crema) 68%);
   position: relative;
@@ -152,9 +149,6 @@ nav button.active, nav button:hover { color: var(--crema); background: var(--ros
 .btn-red    { background: var(--rosso); color: var(--crema); }
 .btn-outline { background: transparent; color: var(--marrone); border: 2px solid var(--marrone); }
 
-/* ──────────────────────────────
-   VIEW: MENU
-────────────────────────────── */
 #view-menu { background: #fdf0d5; }
 
 .page-header {
@@ -191,9 +185,6 @@ nav button.active, nav button:hover { color: var(--crema); background: var(--ros
   text-transform: uppercase; color: var(--terra); opacity: .7;
 }
 
-/* ──────────────────────────────
-   VIEW: PRENOTA
-────────────────────────────── */
 #view-prenota {
   background: var(--rosso);
   color: var(--crema);
@@ -251,9 +242,6 @@ nav button.active, nav button:hover { color: var(--crema); background: var(--ros
   color: var(--oro);
 }
 
-/* ──────────────────────────────
-   VIEW: CONTATTI
-────────────────────────────── */
 #view-contatti { background: var(--crema); }
 
 .c-grid {
@@ -285,7 +273,6 @@ nav button.active, nav button:hover { color: var(--crema); background: var(--ros
   background: var(--marrone); color: var(--crema);
 }
 
-
 .real-logo {
   margin-bottom: 1.8rem;
   animation: fadeUp .7s ease both;
@@ -296,7 +283,6 @@ nav button.active, nav button:hover { color: var(--crema); background: var(--ros
   border-radius: 8px;
 }
 
-/* ─── ANIMATIONS ─── */
 @keyframes spin {
   from { transform: rotate(0deg); }
   to   { transform: rotate(360deg); }
