@@ -182,6 +182,10 @@ nav button.active, nav button:hover { color: var(--crema); background: var(--ros
   margin-bottom: 2rem; line-height: 1.8; font-size: .95rem;
 }
 
+.menu-btns {
+  display: flex; gap: .8rem; flex-wrap: wrap; justify-content: center;
+  margin-bottom: .5rem;
+}
 .menu-note {
   margin-top: 1.5rem;
   font-family: 'Barlow Condensed', sans-serif;
